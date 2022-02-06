@@ -1,0 +1,9 @@
+{
+  "name": "plataforma-de-conteudos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RicardoFredes/plataforma-de-conteudos.git",
+  "author": "Fredes",
+  "license": "MIT",
+  "private": false
+}
