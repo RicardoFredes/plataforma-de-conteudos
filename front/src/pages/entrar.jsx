@@ -1,9 +1,9 @@
 import PageTemplate from "../components/templates/page-template/page-template.component";
 
-export default function Home() {
+export default function SignIn() {
   return (
     <PageTemplate>
-      <h1>Oi!</h1>
+      <h2>Entrar</h2>
     </PageTemplate>
   )
 }
