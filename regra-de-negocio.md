@@ -36,7 +36,8 @@
           "count": [
             {
               "type": "video",
-              "length": 5
+              "length": 5,
+              "durantionInMs": 500000,
             }
           ]
         },
@@ -97,6 +98,7 @@ Document
           "url": "",
           "ratio": "16by9",
           "provider": "youtube",
+          "durationInMs": 3000
         },
         {
           "type": "text",
