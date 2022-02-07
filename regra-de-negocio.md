@@ -11,98 +11,45 @@
 {
   "status": 200,
   "message": "ok",
-  "meta": {
-    "type": "list",
-    "id": "",
-    "path": "",
-    "rate": 5,
-    "isCompleted": false,
-    "thumbnail": {
+  "body": [
+    {
+      "type": "meta",
       "title": "",
-      "url": "",
-      "width": "800px",
-      "height": "600px",
-      "sm": {
-        "url": "",
-        "width": "400px",
-        "height": "300px",
-      },
-      "md": {},
-      "lg": {}
-    }
-  },
-  "body": {
-    "title": "",
-    "description": "",
-    "items": [
-      {
-        "path": "",
-        "title": "",
-        "isComplete": false,
-        "type": "video",
-        "image": {
-          "title": "",
-          "url": "",
-          "height": "600px",
-          "width": "800px"
+      "hash": "",
+      "slug": "",
+      "description": "",
+      "image": null
+    },
+    {
+      "type": "list",
+      "slug": "",
+      "title": "",
+      "description": "",
+      "image": null,
+      "list": [
+        {
+          "type": "list",
+          "slug": "",
+          "title": "Java com Spring",
+          "description": "",
+          "image": null,
+          "count": [
+            {
+              "type": "video",
+              "length": 5
+            }
+          ]
+        },
+        {
+          "type": "document",
+          "slug": "",
+          "title": "Aula 1",
+          "description": "",
+          "image": null,
         }
-      },
-      {
-        "path": "",
-        "title": "",
-        "isComplete": false,
-        "type": "text",
-        "image": null
-      },
-      {
-        "path": "",
-        "title": "",
-        "isComplete": false,
-        "type": "exercise",
-        "total": 5,
-        "image": null
-      },
-    ]
-  },
-  "pagination": {
-    "totalPages": 1,
-    "itemsPerPage": 20,
-    "currentPage": 1,
-    "next": null,
-    "previous": null,
-  }
-}
-```
-
-Aula: video
-```json
-{
-  "status": 200,
-  "message": "ok",
-  "meta": {
-    "type": "video",
-    "id": "",
-    "path": "",
-    "rate": 5,
-    "isCompleted": true,
-  },
-  "body": {
-    "title": "",
-    "type": "video", // text, exercises
-    "text": "<p>okok</p>",
-    "image": {
-      "title": "",
-      "url": "",
-      "height": "600px",
-      "width": "800px"
-    },
-    "video": {
-      "title": "",
-      "url": "",
-      "provider": "youtube",
-      "ratio": "16by9"
+      ]
     }
-  },
+  ],
   "pagination": {
     "totalPages": 1,
     "itemsPerPage": 20,
@@ -113,56 +60,78 @@ Aula: video
 }
 ```
 
-Aula: exercise
+Document
 ```json
 {
   "status": 200,
   "message": "ok",
-  "meta": {
-    "type": "exercise",
-    "id": "",
-    "path": "",
-    "rate": 3,
-    "isCompleted": false,
-  },
-  "body": {
-    "title": "",
-    "type": "exercise", // text, exercises
-    "text": "<p>okok</p>",
-    "image": {
-      "title": "",
-      "url": "",
-      "height": "600px",
-      "width": "800px"
-    },
-    "questions": [
-      {
-        "question": "<p>Qual é o nome de uma função que tem a seguinte estrutura: const nomeDaFuncao = () => {};</p>",
-        "aswers": [
+  "body": [
+    {
+      "hash": "f783fa55-7280-4e73-b33a-7c80bc339a13",
+      "type": "meta",
+      "title": "Aula 1",
+      "slug": "aula-1",
+      "description": "<p>Aula 1</p>",
+      "image": {
+        "title": "",
+        "list": [
           {
-            "answer": "Arrow function",
-            "alternative": "A",
-            "isCorrect": true
+            "size": "sm",
+            "url": "",
+            "height": 400,
+            "width": 300,
           },
           {
-            "answer": "Lexical function",
-            "alternative": "B",
-            "isCorrect": false
+            "size": "lg",
+            "url": "",
+            "height": 600,
+            "width": 800,
           }
-        ],
-        "correction": {
-          "text": "A letra A é a correta...",
-          "alternative": "A"
+        ]
+      },
+      "list": [
+        {
+          "type": "video", // text, exercises
+          "title": "",
+          "image": null,
+          "url": "",
+          "ratio": "16by9",
+          "provider": "youtube",
+        },
+        {
+          "type": "text",
+          "title": "",
+          "text": "<p>olá</p>"
+        },
+        {
+          "type": "exercise",
+          "title": "",
+          "text": "<p>olá</p>",
+          "aswers": [
+            {
+              "text": "Arrow function",
+              "alternative": "A",
+              "isCorrect": true
+            },
+            {
+              "text": "Lexical function",
+              "alternative": "B",
+              "isCorrect": false
+            }
+          ],
+          "correction": {
+            "text": "A letra A é a correta...",
+            "alternative": "A",
+            "video": {
+              "url": "",
+              "provider": "youtube",
+              "ratio": "16by9",
+            },
+            "image": null
+          }
         }
-      }
-    ]
-  },
-  "pagination": {
-    "totalPages": 1,
-    "itemsPerPage": 20,
-    "currentPage": 1,
-    "next": null,
-    "previous": null,
-  }
+      ],
+    }
+  ]
 }
 ```
