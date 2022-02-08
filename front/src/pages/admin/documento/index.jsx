@@ -8,7 +8,7 @@ export default function NewDocument() {
   
   useEffect(() => {
     const hash = uuidV4();
-    const route = `/admin/document/${hash}`;
+    const route = `/admin/documento/${hash}`;
     router.push(route);
   }, []);
 
