@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -15,7 +16,7 @@ import java.util.List;
 public class Image implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String title;
 
@@ -33,6 +34,6 @@ public class Image implements Serializable {
 
     @OneToMany(mappedBy = "image", cascade = CascadeType.ALL)
     @JsonProperty("list")
-    private List<ListImage> listImages;
+    private List<ListImage> listImages = new ArrayList<>();
 
 }

@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class ListImage implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String size;
     private String url;

@@ -13,7 +13,7 @@ import java.io.Serializable;
 public class Aswers implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     private String text;
